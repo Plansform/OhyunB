@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohyun Box</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+  <nav class="sidebar close">
+      <header>
+          <div class="image-text">
+              <span class="image">
+                <img src="logo.png" alt="logo">
+              </span>
+
+              <div class="text logo-text">
+                  <span class="name">Ohyun Box</span>
+                  <span class="profession"></span>
+              </div>
+          </div>
+
+          <i class='bx bx-chevron-right toggle'></i>
+      </header>
+
+      <div class="menu-bar">
+          <div class="menu">
+
+              <li class="search-box">
+                  <i class='bx bx-search icon'></i>
+                  <input type="text" placeholder="Search...">
+              </li>
+
+              <ul class="menu-links">
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class='bx bx-home-alt icon' ></i>
+                          <span class="text nav-text">Home</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-link">
+                      <a href="#">
+                          <i class='bx bx-bell icon' ></i>
+                          <span class="text nav-text">Notifications</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-link">
+                      <a href="map.html">
+                          <i class='bx bx-map-alt icon'></i>
+                          <span class="text nav-text">Map</span>
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
+
+          <div class="bottom-content">
+            <nav class="navigation">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-in icon' ></i>
+                        <button class="btnLogin-popup">Login</button>
+                    </a>
+                </li>
+            </nav>
+              <li class="mode">
+                  <div class="sun-moon">
+                      <i class='bx bx-moon icon moon'></i>
+                      <i class='bx bx-sun icon sun'></i>
+                  </div>
+                  <span class="mode-text text">Dark mode</span>
+
+                  <div class="toggle-switch">
+                      <span class="switch"></span>
+                  </div>
+              </li>
+              
+          </div>
+      </div>
+
+  </nav>
+        <!-- 아이디 비밀번호 -->
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <div class="form-box login">
+                <h2>로그인</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class='bx bx-envelope'></i>
+                        </span>
+                        <input type="mail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class='bx bx-lock'></i>
+                        </span>
+                        <input type="password" required>
+                        <label >Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox">로그인 상태 유지
+                        </label>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                    <button type="submit" class="btn">로그인</button>
+                    <div class="login-register">
+                        <p><a href="#"class = "register-link">회원가입</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>회원가입</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class='bx bx-user-pin' type = 'solid'></i>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class='bx bx-envelope'></i>
+                        </span>
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class='bx bx-lock'></i>
+                        </span>
+                        <input type="password" required>
+                        <label >Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox">개인정보 수집에 동의합니까?
+                        </label>
+                        <a href="#"></a>
+                    </div>
+                    <button type="submit" class="btn">회원가입</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#"class = "login-link">로그인</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
